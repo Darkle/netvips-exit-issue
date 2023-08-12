@@ -1,5 +1,4 @@
 ﻿open NetVips
-open System.IO
 
 [<EntryPoint>]
 let main _ =

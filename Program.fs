@@ -24,7 +24,8 @@ let main _ =
         )
 
         printfn "finished creating avif"
+        0
     with err ->
         printfn "Error in convertToAvif: %A" err
+        1
 
-    0

@@ -1,5 +1,14 @@
 ﻿open NetVips
 
+Log.SetLogHandler(
+    "VIPS",
+    Enums.LogLevelFlags.Warning,
+    fun domain level message ->
+        printfn $"Domain: '{domain}' Level: {level}"
+        printfn $"Message: {message}"
+)
+|> ignore
+
 [<EntryPoint>]
 let main _ =
     try
